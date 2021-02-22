@@ -2,7 +2,7 @@ import React from "react";
 import Launch from "./Launch.js";
 import Github from "./Github.js";
 
-function Card({ title, text, skills, image }) {
+function Card({ title, text, skills, image, github, app }) {
   return (
     <div class="font-mono tracking-tighter m-8 max-w-md mx-auto bg-white rounded-xl shadow-lg overflow-hidden md:max-w-3xl">
       <div class="md:flex">
@@ -27,12 +27,16 @@ function Card({ title, text, skills, image }) {
                   </div>
                 ))}
               </div>
-              <a href="https://github.com/sbarthol/scoogle">
-                <Launch />
-              </a>
-              <a href="https://github.com/sbarthol/scoogle">
-                <Github />
-              </a>
+              {app !== undefined && (
+                <a href="https://github.com/sbarthol/scoogle">
+                  <Launch />
+                </a>
+              )}
+              {github !== undefined && (
+                <a href="https://github.com/sbarthol/scoogle">
+                  <Github />
+                </a>
+              )}
             </div>
           </div>
         </div>

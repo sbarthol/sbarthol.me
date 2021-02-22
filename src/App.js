@@ -6,6 +6,7 @@ function App() {
     <div class="bg-indigo-50 h-full">
       <Header />
       <Card
+        app="sss"
         skills={["C++", "VSCode"]}
         title="Finding customers for your new business"
         text="Getting a new business off the ground is a lot of hard work. Here
