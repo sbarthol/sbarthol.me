@@ -1,13 +1,10 @@
 import Card from "./components/Card.js";
+import Header from "./components/Header";
 
 function App() {
   return (
-    <div class="bg-indigo-50 font-mono tracking-tighter h-full">
-      <div class="sticky top-0 shadow-lg w-full flex items-center h-auto bg-indigo-500">
-        <div class="p-6 text-4xl font-medium text-white">
-          Sacha Bartholme's open source portfolio
-        </div>
-      </div>
+    <div class="bg-indigo-50 h-full">
+      <Header />
       <Card
         skills={["C++", "VSCode"]}
         title="Finding customers for your new business"

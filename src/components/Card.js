@@ -4,7 +4,7 @@ import Github from "./Github.js";
 
 function Card({ title, text, skills, image }) {
   return (
-    <div class="m-8 max-w-md mx-auto bg-white rounded-xl shadow-lg overflow-hidden md:max-w-3xl">
+    <div class="font-mono tracking-tighter m-8 max-w-md mx-auto bg-white rounded-xl shadow-lg overflow-hidden md:max-w-3xl">
       <div class="md:flex">
         <div class="md:flex-shrink-0">
           <img
