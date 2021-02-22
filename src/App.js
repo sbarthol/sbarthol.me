@@ -7,6 +7,9 @@ import tictactoeGif from "./resources/tictactoe.gif";
 import kernelPng from "./resources/kernel.png";
 import threadlibPng from "./resources/threadlib.png";
 import sbartholMePng from "./resources/sbarthol.me.png";
+import doodleJumpJpg from "./resources/doodle-jump.jpg";
+import nottenJpg from "./resources/notten.jpg";
+import bittorrentPng from "./resources/bittorrent.png";
 
 function App() {
   return (
@@ -50,7 +53,8 @@ function App() {
         title="tictactoe"
         app="https://tictactoe.sbarthol.me"
         github="https://github.com/sbarthol/tictactoe"
-        text="Tictactoe is an invincible tictactoe game written in React and using the minimax algorithm."
+        text="Tictactoe is an invincible tictactoe game written in 
+        React and using the minimax algorithm."
         image={tictactoeGif}
       />
       <Card
@@ -60,6 +64,39 @@ function App() {
         text="This website, that I decided to build after a 8.5 x 11 resume page wasn't 
         enough anymore to store all my open source projects."
         image={sbartholMePng}
+      />
+      <Card
+        skills={["C++", "algorithms"]}
+        title="doodle jump"
+        github="https://github.com/sbarthol/doodle-jump"
+        app="https://portal.education.lu/Portals/21/LIO/2018/Questionnaire%20Finale.pdf"
+        text="A competitive programming problem that I successfully submitted for the Luxembourgish 
+        Olympiad in Informatics (2018 edition). I had won the 2017 edition the year before. 
+        It is a hard dynamic programming problem in which a jumper must hop from platform to platform
+        using the least number of jetpacks. None of the contestants were able to solve the problem
+        entirely that year."
+        image={doodleJumpJpg}
+      />
+      <Card
+        skills={["Objective-C", "Swift", "Cocoa", "XCode"]}
+        title="notten"
+        github="https://github.com/sbarthol/notten"
+        text="Notten is an iOS App written in Objective-C and Swift. 
+        Students enter their grades and receive all sorts of statistics,
+        data, charts, graphs etc... 
+        It ranked number 1 in the Luxembourgish App Store and 
+        was downloaded 6950 times during its lifetime."
+        image={nottenJpg}
+      />
+      <Card
+        skills={["C++", "CMake"]}
+        title="bittorrent"
+        github="https://github.com/sbarthol/bittorrent"
+        text="This is a small torrenting client written from scratch in C++.
+        It downloads a bencoded torrent file from a tracker, decodes the torrent bencode,
+        and downloads a file from a list of peers given by the tracker using the bittorrent
+        protocol (application layer protocol on top of TCP)."
+        image={bittorrentPng}
       />
     </div>
   );
