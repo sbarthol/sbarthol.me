@@ -4,10 +4,13 @@ import Header from "./components/Header";
 import gamebojGif from "./resources/gameboj.gif";
 import scooglePng from "./resources/scoogle.png";
 import tictactoeGif from "./resources/tictactoe.gif";
+import kernelPng from "./resources/kernel.png";
+import threadlibPng from "./resources/threadlib.png";
+import sbartholMePng from "./resources/sbarthol.me.png";
 
 function App() {
   return (
-    <div class="bg-indigo-50 h-full">
+    <div>
       <Header />
       <Card
         github="https://github.com/sbarthol/gameboj"
@@ -34,13 +37,13 @@ function App() {
         text="This is the kernel from Carnegie Mellon University 15410 class. 
         With a partner, we implemented scheduler, virtual memory, hardware interrupts 
         (keyboard, timer), a console driver and more than 20 system calls."
-        image="https://images.unsplash.com/photo-1515711660811-48832a4c6f69?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=448&q=80"
+        image={kernelPng}
       />
       <Card
         skills={["C", "Concurrency"]}
         title="threadlib"
         text="This is a thread library written from scratch in C built on top of my kernel."
-        image="https://images.unsplash.com/photo-1515711660811-48832a4c6f69?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=448&q=80"
+        image={threadlibPng}
       />
       <Card
         skills={["React", "Javascript"]}
@@ -54,8 +57,9 @@ function App() {
         skills={["React", "tailwindCSS"]}
         title="sbarthol.me"
         github="https://github.com/sbarthol/sbarthol.me"
-        text="This website."
-        image="https://images.unsplash.com/photo-1515711660811-48832a4c6f69?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=448&q=80"
+        text="This website, that I decided to build after a 8.5 x 11 resume page wasn't 
+        enough anymore to store all my open source projects."
+        image={sbartholMePng}
       />
     </div>
   );
