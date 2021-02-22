@@ -15,7 +15,7 @@ function Card({ title, text, skills, image, github, app }) {
         </div>
         <div class="block w-full">
           <div class="p-6">
-            <p class="mt-1 text-xl leading-none font-bold text-black">
+            <p class="mt-1 text-3xl leading-none font-bold text-black">
               {title}
             </p>
             <p class="mt-2 text-gray-500">{text}</p>
@@ -28,12 +28,12 @@ function Card({ title, text, skills, image, github, app }) {
                 ))}
               </div>
               {app !== undefined && (
-                <a href="https://github.com/sbarthol/scoogle">
+                <a href={app}>
                   <Launch />
                 </a>
               )}
               {github !== undefined && (
-                <a href="https://github.com/sbarthol/scoogle">
+                <a href={github}>
                   <Github />
                 </a>
               )}
