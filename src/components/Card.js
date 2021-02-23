@@ -2,7 +2,7 @@ import React from "react";
 import Launch from "./Launch.js";
 import Github from "./Github.js";
 
-function Card({ title, text, skills, image, github, app }) {
+function Card({ title, skills, image, github, app, children }) {
   return (
     <div class="font-mono tracking-tighter m-8 max-w-md mx-auto bg-white rounded-xl shadow-lg overflow-hidden md:max-w-4xl">
       <div class="md:flex">
@@ -18,11 +18,11 @@ function Card({ title, text, skills, image, github, app }) {
             <p class="mt-1 text-3xl leading-none font-bold text-black">
               {title}
             </p>
-            <p class="mt-2 text-gray-500">{text}</p>
-            <div class="mt-3 space-x-2 flex items-start justify-end">
+            <div class="mt-2 text-gray-500">{children}</div>
+            <div class="mt-3 space-x-4 flex items-start justify-end">
               <div class="flex space-x-2 flex-auto">
                 {skills.map((skill) => (
-                  <div class="w-min font-sans px-1 text-white rounded-md bg-indigo-500">
+                  <div class="w-auto font-sans px-1 text-white rounded-md bg-indigo-500">
                     {skill}
                   </div>
                 ))}
