@@ -17,18 +17,14 @@ function App() {
     <div>
       <Header />
       <Card
-        github="https://github.com/sbarthol/gameboj"
-        skills={["Java", "Assembly"]}
-        title="gameboj"
-        image={gamebojGif}
+        skills={["React", "tailwindCSS"]}
+        title="sbarthol.me"
+        app="https://sbarthol.me"
+        github="https://github.com/sbarthol/sbarthol.me"
+        image={sbartholMePng}
       >
-        Gameboj is a complete Nintendo{" "}
-        <Link href="https://en.wikipedia.org/wiki/Game_Boy">1989 Game Boy</Link>{" "}
-        emulator written from scratch in Java. Any game cartridge can be
-        downloaded as a .gb file and played on the emulator. The original Sharp
-        LR35902 processor is emulated on a very low level. Bus controller, ROM,
-        RAM, Direct Memory Accesses (DMA), screen controller etc... are
-        implemented according to the original Nintendo specs.
+        This website, that I decided to build after a 8.5 x 11 resume page
+        wasn't enough anymore to store all my open source projects.
       </Card>
       <Card
         skills={["Scala", "Akka Framework", "React"]}
@@ -40,6 +36,29 @@ function App() {
         Scoogle is a Search Engine written from scratch in Scala and using Akka
         Actors. Its components are a web crawler, a HBase data store, a server
         serving a backend API and a frontend written in React.
+      </Card>
+      <Card
+        skills={["React", "Javascript"]}
+        title="tictactoe"
+        app="https://tictactoe.sbarthol.me"
+        github="https://github.com/sbarthol/tictactoe"
+        image={tictactoeGif}
+      >
+        Tictactoe is an invincible tictactoe game written in React and using the{" "}
+        <Link href="https://en.wikipedia.org/wiki/Minimax">minimax</Link>{" "}
+        algorithm.
+      </Card>
+      <Card
+        skills={["C++", "CMake", "googletest"]}
+        title="bittorrent"
+        github="https://github.com/sbarthol/bittorrent"
+        image={bittorrentPng}
+      >
+        This is a small torrenting client written from scratch in C++. It
+        downloads a bencoded torrent file from a tracker, decodes the torrent
+        bencode, and downloads a file from a list of peers given by the tracker
+        using the bittorrent protocol (application layer protocol on top of
+        TCP).
       </Card>
       <Card
         skills={["C", "x86 Assembly", "Concurrency"]}
@@ -69,27 +88,6 @@ function App() {
         condition variables, semaphores and read-write locks on top of that.
       </Card>
       <Card
-        skills={["React", "Javascript"]}
-        title="tictactoe"
-        app="https://tictactoe.sbarthol.me"
-        github="https://github.com/sbarthol/tictactoe"
-        image={tictactoeGif}
-      >
-        Tictactoe is an invincible tictactoe game written in React and using the{" "}
-        <Link href="https://en.wikipedia.org/wiki/Minimax">minimax</Link>{" "}
-        algorithm.
-      </Card>
-      <Card
-        skills={["React", "tailwindCSS"]}
-        title="sbarthol.me"
-        app="https://sbarthol.me"
-        github="https://github.com/sbarthol/sbarthol.me"
-        image={sbartholMePng}
-      >
-        This website, that I decided to build after a 8.5 x 11 resume page
-        wasn't enough anymore to store all my open source projects.
-      </Card>
-      <Card
         skills={["C++", "algorithms"]}
         title="doodle jump"
         github="https://github.com/sbarthol/doodle-jump"
@@ -107,6 +105,20 @@ function App() {
         solve the problem entirely that year.
       </Card>
       <Card
+        github="https://github.com/sbarthol/gameboj"
+        skills={["Java", "Assembly"]}
+        title="gameboj"
+        image={gamebojGif}
+      >
+        Gameboj is a complete Nintendo{" "}
+        <Link href="https://en.wikipedia.org/wiki/Game_Boy">1989 Game Boy</Link>{" "}
+        emulator written from scratch in Java. Any game cartridge can be
+        downloaded as a .gb file and played on the emulator. The original Sharp
+        LR35902 processor is emulated on a very low level. Bus controller, ROM,
+        RAM, Direct Memory Accesses (DMA), screen controller etc... are
+        implemented according to the original Nintendo specs.
+      </Card>
+      <Card
         skills={["Objective-C", "Swift", "Cocoa Framework", "XCode"]}
         title="notten"
         app="https://www.facebook.com/NottenLuxembourg"
@@ -117,18 +129,6 @@ function App() {
         their grades and receive all sorts of statistics, data, charts, graphs
         etc... It ranked number 1 in the Luxembourgish App Store, was downloaded
         6950 times and generated a revenue of $2.12K during its lifetime.
-      </Card>
-      <Card
-        skills={["C++", "CMake", "googletest"]}
-        title="bittorrent"
-        github="https://github.com/sbarthol/bittorrent"
-        image={bittorrentPng}
-      >
-        This is a small torrenting client written from scratch in C++. It
-        downloads a bencoded torrent file from a tracker, decodes the torrent
-        bencode, and downloads a file from a list of peers given by the tracker
-        using the bittorrent protocol (application layer protocol on top of
-        TCP).
       </Card>
       <Card
         skills={["Objective-C", "Cocoa Framework", "XCode"]}
