@@ -1,4 +1,4 @@
-import Card from "./components/Card.js";
+import { Card, Link } from "./components/Card.js";
 import Header from "./components/Header";
 
 import gamebojGif from "./resources/gameboj.gif";
@@ -22,9 +22,13 @@ function App() {
         title="gameboj"
         image={gamebojGif}
       >
-        Gameboj is a complete Nintendo Game Boy of 1989 emulator written from
-        scratch in Java. Any game cartridge can be downloaded as a .gb file and
-        played on the emulator.
+        Gameboj is a complete Nintendo{" "}
+        <Link href="https://en.wikipedia.org/wiki/Game_Boy">1989 Game Boy</Link>{" "}
+        emulator written from scratch in Java. Any game cartridge can be
+        downloaded as a .gb file and played on the emulator. The original Sharp
+        LR35902 processor is emulated on a very low level. Bus controller, ROM,
+        RAM, Direct Memory Accesses (DMA), screen controller etc... are
+        implemented according to the original Nintendo specs.
       </Card>
       <Card
         skills={["Scala", "Akka Framework", "React"]}
@@ -40,19 +44,29 @@ function App() {
       <Card
         skills={["C", "x86 Assembly", "Concurrency"]}
         title="kernel"
+        github="https://gitfront.io/r/sbarthol/bf74b9f7a5b48ca06f80f54ab4a9e74321c72fd3/kernel/"
         image={kernelPng}
       >
-        This is the kernel from Carnegie Mellon University 15410 class. With a
+        This is the kernel from Carnegie Mellon University{" "}
+        <Link href="https://www.cs.cmu.edu/~410/">15410</Link> class. With a
         partner, we implemented scheduler, virtual memory, hardware interrupts
-        (keyboard, timer), a console driver and more than 20 system calls.
+        (keyboard, timer), a console driver and more than 20 system calls. We
+        later added a console multiplexer and an implementation of the{" "}
+        <Link href="https://en.wikipedia.org/wiki/Uptime#Linux">
+          Linux uptime
+        </Link>{" "}
+        command.
       </Card>
       <Card
-        skills={["C", "Concurrency"]}
+        skills={["C", "x86 Assembly", "Concurrency"]}
         title="threadlib"
+        github="https://gitfront.io/r/sbarthol/5bd5996d5ecf32b5971d83be2b1e1eacd3b14a89/threadlib/"
         image={threadlibPng}
       >
-        This is a thread library written from scratch in C built on top of my
-        kernel.
+        This is a 1:1 pure kernel thread library written from scratch in C built
+        on top of my kernel. Once the library was able to spawn and join
+        threads, we added mutexes using the x86 xchg instruction. We then added
+        condition variables, semaphores and read-write locks on top of that.
       </Card>
       <Card
         skills={["React", "Javascript"]}
@@ -62,14 +76,13 @@ function App() {
         image={tictactoeGif}
       >
         Tictactoe is an invincible tictactoe game written in React and using the{" "}
-        <a href="www.sacha.com" class="underline hover:text-indigo-500">
-          minimax
-        </a>{" "}
+        <Link href="https://en.wikipedia.org/wiki/Minimax">minimax</Link>{" "}
         algorithm.
       </Card>
       <Card
         skills={["React", "tailwindCSS"]}
         title="sbarthol.me"
+        app="https://sbarthol.me"
         github="https://github.com/sbarthol/sbarthol.me"
         image={sbartholMePng}
       >
@@ -83,12 +96,15 @@ function App() {
         app="https://portal.education.lu/Portals/21/LIO/2018/Questionnaire%20Finale.pdf"
         image={doodleJumpJpg}
       >
-        A competitive programming problem that I successfully submitted for the
-        Luxembourgish Olympiad in Informatics (2018 edition). I had won the 2017
-        edition the year before. It is a hard dynamic programming problem in
-        which a jumper must hop from platform to platform using the least number
-        of jetpacks. None of the contestants were able to solve the problem
-        entirely that year.
+        Doodle Jump is a competitive programming problem that I successfully
+        submitted for the Luxembourgish Olympiad in Informatics{" "}
+        <Link href="https://portal.education.lu/infosolympiad/Historique-LIO/LIO-2018-2020">
+          (2018 edition)
+        </Link>
+        . I had won the 2017 edition the year before. It is a hard dynamic
+        programming problem in which a jumper must hop from platform to platform
+        using the least number of jetpacks. None of the contestants were able to
+        solve the problem entirely that year.
       </Card>
       <Card
         skills={["Objective-C", "Swift", "Cocoa Framework", "XCode"]}
