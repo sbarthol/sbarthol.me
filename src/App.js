@@ -2,7 +2,7 @@ import { Card, Link } from "./components/Card.js";
 import Header from "./components/Header";
 
 import gamebojGif from "./resources/gameboj.gif";
-import scooglePng from "./resources/scoogle.png";
+import scoogleGif from "./resources/scoogle.gif";
 import tictactoeGif from "./resources/tictactoe.gif";
 import kernelPng from "./resources/kernel.png";
 import threadlibPng from "./resources/threadlib.png";
@@ -31,7 +31,7 @@ function App() {
         github="https://github.com/sbarthol/scoogle"
         app="https://scoogle.sbarthol.me"
         title="scoogle"
-        image={scooglePng}
+        image={scoogleGif}
       >
         Scoogle is a Search Engine written from scratch in Scala and using Akka
         Actors. Its components are a web crawler, a HBase data store, a server
