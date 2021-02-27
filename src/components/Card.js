@@ -41,9 +41,9 @@ function Card({ title, skills, image, github, app, children }) {
 						<p class="mt-1 text-3xl leading-none font-bold text-black">{title}</p>
 						<div class="mt-2 text-gray-500">{children}</div>
 						<div class="mt-3 space-x-4 flex items-start justify-end">
-							<div class="flex space-x-2 flex-auto">
+							<div class="flex flex-auto flex-wrap">
 								{skills.map((skill) => (
-									<div class="w-auto font-sans px-1 text-white rounded-md bg-indigo-500">
+									<div class="w-auto mr-2 mb-2 font-sans px-1 text-white rounded-md bg-indigo-500">
 										{skill}
 									</div>
 								))}
