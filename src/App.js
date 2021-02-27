@@ -61,7 +61,11 @@ function App() {
 			<Card
 				skills={["C", "x86 Assembly", "Concurrency"]}
 				title="kernel"
-				//github="https://gitfront.io/r/sbarthol/bf74b9f7a5b48ca06f80f54ab4a9e74321c72fd3/kernel/"
+				github={
+					process.env.REACT_APP_VISIBILITY === "PUBLIC"
+						? undefined
+						: "https://gitfront.io/r/sbarthol/bf74b9f7a5b48ca06f80f54ab4a9e74321c72fd3/kernel/"
+				}
 				image={kernelPng}
 			>
 				This is the kernel from Carnegie Mellon University{" "}
@@ -74,7 +78,11 @@ function App() {
 			<Card
 				skills={["C", "x86 Assembly", "Concurrency"]}
 				title="threadlib"
-				//github="https://gitfront.io/r/sbarthol/5bd5996d5ecf32b5971d83be2b1e1eacd3b14a89/threadlib/"
+				github={
+					process.env.REACT_APP_VISIBILITY === "PUBLIC"
+						? undefined
+						: "https://gitfront.io/r/sbarthol/5bd5996d5ecf32b5971d83be2b1e1eacd3b14a89/threadlib/"
+				}
 				image={threadlibPng}
 			>
 				This is a 1:1 pure kernel thread library written from scratch in C built on top of
