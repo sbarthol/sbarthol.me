@@ -17,7 +17,7 @@ function App() {
 		<div>
 			<Header />
 			<Card
-				skills={["React", "tailwindCSS"]}
+				skills={["React", "tailwindCSS", "nginx"]}
 				title="sbarthol.me"
 				app="https://sbarthol.me"
 				github="https://github.com/sbarthol/sbarthol.me"
