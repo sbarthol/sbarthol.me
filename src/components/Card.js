@@ -2,14 +2,6 @@ import React from "react";
 import Launch from "./Launch.js";
 import Github from "./Github.js";
 
-function Link({ href, children }) {
-	return (
-		<a href={href} class="underline hover:text-indigo-500">
-			{children}
-		</a>
-	);
-}
-
 function Card({ title, skills, image, github, app, children }) {
 	let githubLink;
 	if (github === undefined) {
@@ -62,4 +54,4 @@ function Card({ title, skills, image, github, app, children }) {
 	);
 }
 
-export { Card, Link };
+export default Card;

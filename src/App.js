@@ -1,5 +1,6 @@
-import { Card, Link } from "./components/Card.js";
+import Card from "./components/Card";
 import Header from "./components/Header";
+import Hyperlink from "./components/Hyperlink";
 
 import gamebojGif from "./resources/gameboj.gif";
 import scoogleGif from "./resources/scoogle.gif";
@@ -45,7 +46,8 @@ function App() {
 				image={tictactoeGif}
 			>
 				Tictactoe is an invincible tictactoe game written in React and using the{" "}
-				<Link href="https://en.wikipedia.org/wiki/Minimax">minimax</Link> algorithm.
+				<Hyperlink href="https://en.wikipedia.org/wiki/Minimax">minimax</Hyperlink>{" "}
+				algorithm.
 			</Card>
 			<Card
 				skills={["C++", "CMake", "googletest"]}
@@ -69,11 +71,14 @@ function App() {
 				image={kernelPng}
 			>
 				This is the kernel from Carnegie Mellon University{" "}
-				<Link href="https://www.cs.cmu.edu/~410/">15410</Link> class. With a partner, we
-				implemented scheduler, virtual memory, hardware interrupts (keyboard, timer), a
-				console driver and more than 20 system calls. We later added a console multiplexer
-				and an implementation of the{" "}
-				<Link href="https://en.wikipedia.org/wiki/Uptime#Linux">Linux uptime</Link> command.
+				<Hyperlink href="https://www.cs.cmu.edu/~410/">15410</Hyperlink> class. With a
+				partner, we implemented scheduler, virtual memory, hardware interrupts (keyboard,
+				timer), a console driver and more than 20 system calls. We later added a console
+				multiplexer and an implementation of the{" "}
+				<Hyperlink href="https://en.wikipedia.org/wiki/Uptime#Linux">
+					Linux uptime
+				</Hyperlink>{" "}
+				command.
 			</Card>
 			<Card
 				skills={["C", "x86 Assembly", "Concurrency"]}
@@ -99,9 +104,9 @@ function App() {
 			>
 				Doodle Jump is a competitive programming problem that I successfully submitted for
 				the Luxembourgish Olympiad in Informatics{" "}
-				<Link href="https://portal.education.lu/infosolympiad/Historique-LIO/LIO-2018-2020">
+				<Hyperlink href="https://portal.education.lu/infosolympiad/Historique-LIO/LIO-2018-2020">
 					(2018 edition)
-				</Link>
+				</Hyperlink>
 				. I had won the 2017 edition the year before. It is a hard dynamic programming
 				problem in which a jumper must hop from platform to platform using the least number
 				of jetpacks. None of the contestants were able to solve the problem entirely that
@@ -114,11 +119,11 @@ function App() {
 				image={gamebojGif}
 			>
 				Gameboj is a complete Nintendo{" "}
-				<Link href="https://en.wikipedia.org/wiki/Game_Boy">1989 Game Boy</Link> emulator
-				written from scratch in Java. Any game cartridge can be downloaded as a .gb file and
-				played on the emulator. The original Sharp LR35902 processor is emulated on a very
-				low level. Bus controller, ROM, RAM, Direct Memory Accesses (DMA), screen controller
-				etc... are implemented according to the original Nintendo specs.
+				<Hyperlink href="https://en.wikipedia.org/wiki/Game_Boy">1989 Game Boy</Hyperlink>{" "}
+				emulator written from scratch in Java. Any game cartridge can be downloaded as a .gb
+				file and played on the emulator. The original Sharp LR35902 processor is emulated on
+				a very low level. Bus controller, ROM, RAM, Direct Memory Accesses (DMA), screen
+				controller etc... are implemented according to the original Nintendo specs.
 			</Card>
 			<Card
 				skills={["Objective-C", "Swift", "Cocoa Framework", "XCode"]}
