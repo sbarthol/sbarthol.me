@@ -23,7 +23,7 @@ function Card({ title, skills, image, github, app, children }) {
 			<div class="md:flex">
 				<div class="md:flex-shrink-0">
 					<img
-						class="h-48 w-full object-cover md:w-60 md:h-full"
+						class="h-48 w-full md:object-left-top object-center object-cover md:w-60 md:h-full"
 						src={image}
 						alt="error"
 					></img>
