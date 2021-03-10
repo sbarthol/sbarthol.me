@@ -70,15 +70,16 @@ function App() {
 				}
 				image={kernelPng}
 			>
-				This is the kernel from Carnegie Mellon University{" "}
+				This is the kernel from Carnegie Mellon University's{" "}
 				<Hyperlink href="https://www.cs.cmu.edu/~410/">15410</Hyperlink> class. With a
-				partner, we implemented scheduler, virtual memory, hardware interrupts (keyboard,
+				partner, I designed and implemented a complete, preemptive, multi-threaded kernel
+				from scratch. We thread scheduler, virtual memory, hardware interrupts (keyboard,
 				timer), a console driver and more than 20 system calls. We later added a console
-				multiplexer and an implementation of the{" "}
+				multiplexer, an implementation of the{" "}
 				<Hyperlink href="https://en.wikipedia.org/wiki/Uptime#Linux">
 					Linux uptime
 				</Hyperlink>{" "}
-				command.
+				command and a thread library.
 			</Card>
 			<Card
 				skills={["C", "x86 Assembly", "Concurrency"]}
