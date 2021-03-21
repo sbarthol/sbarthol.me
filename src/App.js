@@ -98,7 +98,7 @@ function App() {
 			</Card>
 			<Card
 				skills={["C++", "algorithms"]}
-				title="doodle jump"
+				title="doodle-jump"
 				github="https://github.com/sbarthol/doodle-jump"
 				app="https://portal.education.lu/Portals/21/LIO/2018/Questionnaire%20Finale.pdf"
 				image={doodleJumpJpg}
