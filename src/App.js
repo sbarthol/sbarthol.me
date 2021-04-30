@@ -12,6 +12,7 @@ import doodleJumpJpg from "./resources/doodle-jump.jpg";
 import nottenJpg from "./resources/notten.jpg";
 import bittorrentPng from "./resources/bittorrent.png";
 import ilglPng from "./resources/ilgl.png";
+import ivrogneGif from "./resources/ivrogne.gif";
 
 function App() {
 	return (
@@ -125,6 +126,17 @@ function App() {
 				file and played on the emulator. The original Sharp LR35902 processor is emulated on
 				a very low level. Bus controller, ROM, RAM, Direct Memory Accesses (DMA), screen
 				controller etc... are implemented according to the original Nintendo specs.
+			</Card>
+			<Card
+				skills={["Pascal"]}
+				title="ivrogne"
+				github="https://github.com/sbarthol/ivrogne"
+				image={ivrogneGif}
+			>
+				Ivrogne is a tiny high school project written in Pascal. The player first configures
+				a board of size n x n with a number m of obstacles, a house and a drunk. The goal is
+				to get the drunk back to his house by advancing in a random direction each time,
+				avoiding obstacles.
 			</Card>
 			<Card
 				skills={["Objective-C", "Swift", "Cocoa Framework", "XCode"]}
