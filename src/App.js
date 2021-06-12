@@ -13,11 +13,36 @@ import nottenJpg from "./resources/notten.jpg";
 import bittorrentPng from "./resources/bittorrent.png";
 import ilglPng from "./resources/ilgl.png";
 import ivrogneGif from "./resources/ivrogne.gif";
+import l3cPng from "./resources/l3c.png";
 
 function App() {
 	return (
 		<div>
 			<Header />
+			<Card
+				skills={["Scala", "C"]}
+				title="l3c"
+				app="https://l3c.sbarthol.me"
+				github={
+					process.env.REACT_APP_VISIBILITY === "PUBLIC"
+						? undefined
+						: "https://gitfront.io/r/sbarthol/e819ac69f87ba53a9dddba54a59226edefd473c3/l3c/"
+				}
+				image={l3cPng}
+			>
+				Compiler written in Scala for the functional language L3. Advanced compilation
+				techniques like{" "}
+				<Hyperlink href="https://en.wikipedia.org/wiki/Continuation-passing_style">
+					continuation-passing style
+				</Hyperlink>
+				, closure conversion and various optimizations (common subexpression elimination,
+				constant folding, dead code elimination, inlining etc...) where used. The assembly
+				runs on a virtual machine written in C that implements a{" "}
+				<Hyperlink href="https://en.wikipedia.org/wiki/Tracing_garbage_collection">
+					mark-and-sweep
+				</Hyperlink>{" "}
+				garbage collector.
+			</Card>
 			<Card
 				skills={["React", "tailwindCSS", "nginx"]}
 				title="sbarthol.me"
