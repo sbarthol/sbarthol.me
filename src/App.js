@@ -15,11 +15,30 @@ import ilglPng from "./resources/ilgl.png";
 import ivrogneGif from "./resources/ivrogne.gif";
 import l3cPng from "./resources/l3c.png";
 import raftPng from "./resources/raft.png";
+import ssaPng from "./resources/ssa.png";
 
 function App() {
 	return (
 		<div>
 			<Header />
+			<Card
+				skills={["OCaml", "C"]}
+				title="c0c"
+				github={
+					process.env.REACT_APP_VISIBILITY === "PUBLIC"
+						? undefined
+						: "https://gitfront.io/r/sbarthol/373c44c39ac6459869d0045de2d090674b8fd958/c0c/"
+				}
+				image={ssaPng}
+			>
+				c0c is a compiler that compiles{" "}
+				<Hyperlink href="http://w.twelf.org/tutorial/">C0</Hyperlink> to x86-64 assembly and
+				was written for Carnegy Mellon University's{" "}
+				<Hyperlink href="http://www.cs.cmu.edu/~411/index.html">15611</Hyperlink> class. It
+				uses static single assignment to perform optimizations (copy propagation, dead code
+				elimination, folding), does register allocation and automatic garbage collection.
+				Its performance lies between the -O0 and -O1 flags of gcc.
+			</Card>
 			<Card
 				skills={["Go", "RPC"]}
 				title="raft"
