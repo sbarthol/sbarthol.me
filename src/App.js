@@ -14,11 +14,28 @@ import bittorrentPng from "./resources/bittorrent.png";
 import ilglPng from "./resources/ilgl.png";
 import ivrogneGif from "./resources/ivrogne.gif";
 import l3cPng from "./resources/l3c.png";
+import raftPng from "./resources/raft.png";
 
 function App() {
 	return (
 		<div>
 			<Header />
+			<Card
+				skills={["Go", "RPC"]}
+				title="raft"
+				github={
+					process.env.REACT_APP_VISIBILITY === "PUBLIC"
+						? undefined
+						: "https://gitfront.io/r/sbarthol/de0730b2ba112625e216527718d91821d24c9285/raft/"
+				}
+				image={raftPng}
+			>
+				<Hyperlink href="https://raft.github.io/">Raft</Hyperlink> is a consensus algorithm
+				that is designed to be easy to understand. It's equivalent to Paxos in
+				fault-tolerance and performance, but decomposed into independent subproblems. The
+				implementation is based on the{" "}
+				<Hyperlink href="https://raft.github.io/raft.pdf">Raft paper</Hyperlink>.
+			</Card>
 			<Card
 				skills={["Scala", "C"]}
 				title="l3c"
