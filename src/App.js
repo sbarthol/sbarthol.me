@@ -16,11 +16,31 @@ import ivrogneGif from "./resources/ivrogne.gif";
 import l3cPng from "./resources/l3c.png";
 import raftPng from "./resources/raft.png";
 import ssaPng from "./resources/ssa.png";
+import satSvg from "./resources/sat.svg";
 
 function App() {
 	return (
 		<div>
 			<Header />
+			<Card
+				skills={["C++", "OpenMP"]}
+				title="parallel-sat"
+				github="https://github.com/sbarthol/parallel-sat"
+				image={satSvg}
+			>
+				Non-deterministic parallel k-SAT solver using data parallelism and OpenMP. Uses
+				multi-bit assignments and{" "}
+				<Hyperlink href="https://en.wikipedia.org/wiki/Unit_propagation">
+					unit propagation{" "}
+				</Hyperlink>{" "}
+				to speed up results. Developed for the{" "}
+				<Hyperlink href="http://www.cs.cmu.edu/~418/">15618 </Hyperlink> class at Carnegie
+				Mellon University. Implementation based on{" "}
+				<Hyperlink href="http://www.cs.cmu.edu/~mheule/publications/JSAT4_6_Heule.pdf">
+					this paper
+				</Hyperlink>
+				.
+			</Card>
 			<Card
 				skills={["OCaml", "C"]}
 				title="c0c"
