@@ -7,6 +7,7 @@ import scoogleGif from "./resources/scoogle.gif";
 import tictactoeGif from "./resources/tictactoe.gif";
 import kernelPng from "./resources/kernel.png";
 import threadlibPng from "./resources/threadlib.png";
+import sokobanGif from "./resources/sokoban.gif";
 import sbartholMePng from "./resources/sbarthol.me.png";
 import doodleJumpJpg from "./resources/doodle-jump.jpg";
 import nottenJpg from "./resources/notten.jpg";
@@ -177,6 +178,26 @@ function App() {
 				my kernel. Once the library was able to spawn and join threads, we added mutexes
 				using the x86 xchg instruction. We then added condition variables, semaphores and
 				read-write locks on top of that.
+			</Card>
+			<Card
+				skills={["C"]}
+				title="sokoban"
+				github={
+					process.env.REACT_APP_VISIBILITY === "PUBLIC"
+						? undefined
+						: "https://gitfront.io/r/sbarthol/qvJhMfECMkjY/sokoban/"
+				}
+				image={sokobanGif}
+			>
+				<Hyperlink href="https://en.wikipedia.org/wiki/Sokoban">Sokoban</Hyperlink> is a
+				puzzle video game in which the player pushes boxes around in a warehouse, trying to
+				get them to storage locations. The game was written in pure kernel mode, and the
+				drivers (CRTC cursor, keyboard and timer) are implemented using the memory mapped IO
+				and{" "}
+				<Hyperlink href="https://fr.wikipedia.org/wiki/Interrupt_Descriptor_Table">
+					interrupt descriptor table
+				</Hyperlink>{" "}
+				of the x86 architecture.
 			</Card>
 			<Card
 				skills={["C++", "algorithms"]}
