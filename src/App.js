@@ -19,6 +19,7 @@ import raftPng from "./resources/raft.png";
 import ssaPng from "./resources/ssa.png";
 import satSvg from "./resources/sat.svg";
 import hamburguesaGif from "./resources/hamburguesa.gif";
+import spaceBashGif from "./resources/space-bash.gif";
 
 function App() {
 	return (
@@ -31,10 +32,26 @@ function App() {
 				app="https://hamburguesa.sbarthol.me/"
 				image={hamburguesaGif}
 			>
+				Game created for the CMU <Hyperlink href="https://www.cmu-webapps.org/">17637</Hyperlink>{" "}
+				class. Two players compete against each other in order to create the burger following the
+				recipe as quickly as possible. Assets were drawn by hand. The client renders the UI
+				according to websocket messages it receives from the server.
+			</Card>
+			<Card
+				skills={["C++"]}
+				title="space-bash"
+				github="https://github.com/sbarthol/space-bash"
+				image={spaceBashGif}
+			>
 				Game created for the CMU{" "}
-				<Hyperlink href="https://www.cmu-webapps.org/">17637</Hyperlink> class. Two players compete
-				against each other in order to create the burger following the recipe as quickly as
-				possible. Assets were drawn by hand.  The client renders the UI according to websocket messages it receives from the server.
+				<Hyperlink href="http://graphics.cs.cmu.edu/courses/15-466-f22/">15666</Hyperlink> class. A
+				rocket must avoid colliding with foods coming in from all four directions. An asset pipeline
+				was designed and implemented to fit hand-drawn tile assets on a very constrained display system
+				based on the{" "}
+				<Hyperlink href="https://www.nesdev.org/wiki/PPU">
+					Nintendo Entertainment System's PPU
+				</Hyperlink>
+				.
 			</Card>
 			<Card
 				skills={["C++", "OpenMP"]}
