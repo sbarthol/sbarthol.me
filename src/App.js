@@ -67,7 +67,7 @@ function App() {
 			>
 				c0c is a compiler that compiles{" "}
 				<Hyperlink href="http://w.twelf.org/tutorial/">C0</Hyperlink> to x86-64 assembly and was
-				written for Carnegy Mellon University's{" "}
+				written for Carnegie Mellon University's{" "}
 				<Hyperlink href="http://www.cs.cmu.edu/~411/index.html">15611</Hyperlink> class. It uses
 				static single assignment to perform optimizations (copy propagation, dead code elimination,
 				folding), does register allocation and automatic garbage collection. Its performance lies
