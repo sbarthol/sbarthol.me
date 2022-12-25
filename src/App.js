@@ -20,6 +20,7 @@ import ssaPng from "./resources/ssa.png";
 import satSvg from "./resources/sat.svg";
 import hamburguesaGif from "./resources/hamburguesa.gif";
 import spaceBashGif from "./resources/space-bash.gif";
+import bzzPng from "./resources/bzz.png";
 
 function App() {
 	return (
@@ -38,6 +39,19 @@ function App() {
 				according to websocket messages it receives from the server.
 			</Card>
 			<Card
+				skills={["C++", "Blender"]}
+				title="bzz"
+				github="https://github.com/sbarthol/bzz"
+				app="https://hemloc.itch.io/cricket-simulator"
+				image={bzzPng}
+			>
+				3D game created for the CMU{" "}
+				<Hyperlink href="http://graphics.cs.cmu.edu/courses/15-466-f22/">15666</Hyperlink> class.
+				You grow crickets to earn money and buy upgrades to further grow your operation.{" "}
+				<Hyperlink href="https://sites.google.com/andrew.cmu.edu/cricketsim/">Presskit</Hyperlink>{" "}
+				for more details.
+			</Card>
+			<Card
 				skills={["C++"]}
 				title="space-bash"
 				github="https://github.com/sbarthol/space-bash"
@@ -46,8 +60,8 @@ function App() {
 				Game created for the CMU{" "}
 				<Hyperlink href="http://graphics.cs.cmu.edu/courses/15-466-f22/">15666</Hyperlink> class. A
 				rocket must avoid colliding with foods coming in from all four directions. An asset pipeline
-				was designed and implemented to fit hand-drawn tile assets on a very constrained display system
-				based on the{" "}
+				was designed and implemented to fit hand-drawn tile assets on a very constrained display
+				system based on the{" "}
 				<Hyperlink href="https://www.nesdev.org/wiki/PPU">
 					Nintendo Entertainment System's PPU
 				</Hyperlink>
