@@ -21,6 +21,7 @@ import satSvg from "./resources/sat.svg";
 import hamburguesaGif from "./resources/hamburguesa.gif";
 import spaceBashGif from "./resources/space-bash.gif";
 import bzzPng from "./resources/bzz.png";
+import bikeGameGif from "./resources/bike-game.gif"
 
 function App() {
 	return (
@@ -265,6 +266,16 @@ function App() {
 				on the emulator. The original Sharp LR35902 processor is emulated on a very low level. Bus
 				controller, ROM, RAM, Direct Memory Accesses (DMA), screen controller etc... are implemented
 				according to the original Nintendo specs.
+			</Card>
+			<Card
+				skills={["Java"]}
+				title="bike-game"
+				github="https://github.com/sbarthol/bike-game"
+				app="https://drive.google.com/file/d/1vFSU4ScmiiLcwc6F6Bl4wN1o11LJLo5i/view?usp=sharing"
+				image={bikeGameGif}
+			>
+				Game created for the EPFL <Hyperlink href="https://edu.epfl.ch/coursebook/en/introduction-to-programming-CS-107">CS-107 Introduction to Programming</Hyperlink>{" "}
+				class. The goal is to advance along the track and reach the finish line, overcoming all the obstacles along the way. Use the arrows to advance and space to switch direction.
 			</Card>
 			<Card
 				skills={["Pascal"]}
