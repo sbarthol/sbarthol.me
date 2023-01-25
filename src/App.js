@@ -21,7 +21,7 @@ import satSvg from "./resources/sat.svg";
 import hamburguesaGif from "./resources/hamburguesa.gif";
 import spaceBashGif from "./resources/space-bash.gif";
 import bzzPng from "./resources/bzz.png";
-import bikeGameGif from "./resources/bike-game.gif"
+import bikeGameGif from "./resources/bike-game.gif";
 
 function App() {
 	return (
@@ -215,9 +215,11 @@ function App() {
 				image={threadlibPng}
 			>
 				This is a 1:1 pure kernel thread library written from scratch in C built on top of my
-				kernel. Once the library was able to spawn and join threads, we added mutexes using the x86
-				xchg instruction. We then added condition variables, semaphores and read-write locks on top
-				of that.
+				kernel. Once the library was able to spawn and join threads, we added mutexes using the{" "}
+				<Hyperlink href="https://en.wikibooks.org/wiki/X86_Assembly/Data_Transfer#Data_swap">
+					x86 xchg instruction
+				</Hyperlink>
+				. We then added condition variables, semaphores and read-write locks on top of that.
 			</Card>
 			<Card
 				skills={["C"]}
@@ -263,9 +265,10 @@ function App() {
 				Gameboj is a complete Nintendo{" "}
 				<Hyperlink href="https://en.wikipedia.org/wiki/Game_Boy">1989 Game Boy</Hyperlink> emulator
 				written from scratch in Java. Any game cartridge can be downloaded as a .gb file and played
-				on the emulator. The original Sharp LR35902 processor is emulated on a very low level. Bus
-				controller, ROM, RAM, Direct Memory Accesses (DMA), screen controller etc... are implemented
-				according to the original Nintendo specs.
+				on the emulator. The original Sharp LR35902 processor (a variant of the famous{" "}
+				<Hyperlink href="https://fr.wikipedia.org/wiki/Zilog_Z80">Zilog Z80</Hyperlink>) is emulated
+				on a very low level. Bus controller, ROM, RAM, Direct Memory Accesses (DMA), screen
+				controller etc... are implemented according to the original Nintendo specs.
 			</Card>
 			<Card
 				skills={["Java"]}
@@ -274,8 +277,12 @@ function App() {
 				app="https://drive.google.com/file/d/1vFSU4ScmiiLcwc6F6Bl4wN1o11LJLo5i/view?usp=sharing"
 				image={bikeGameGif}
 			>
-				Game created for the EPFL <Hyperlink href="https://edu.epfl.ch/coursebook/en/introduction-to-programming-CS-107">CS-107 Introduction to Programming</Hyperlink>{" "}
-				class. The goal is to advance along the track and reach the finish line, overcoming all the obstacles along the way. Use the arrows to advance and space to switch direction.
+				Game created for the EPFL{" "}
+				<Hyperlink href="https://edu.epfl.ch/coursebook/en/introduction-to-programming-CS-107">
+					CS-107 Introduction to Programming
+				</Hyperlink>{" "}
+				class. The goal is to advance along the track and reach the finish line, overcoming all the
+				obstacles along the way. Use the arrows to advance and space to switch direction.
 			</Card>
 			<Card
 				skills={["Pascal"]}
